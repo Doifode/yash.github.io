@@ -1,0 +1,216 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.section-1{
+    height: 70px;
+    background-color: #0e0a38;
+}
+.search-inpur{
+    height: 37px;
+    width: 175px;
+    background: #27234c;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    
+}
+.font-size-nav{
+    font-size: 16px;
+    color: white;
+}
+.section-2{
+    height: 85px;
+}
+.logo-img{
+    max-width: 170px;
+    height: 50px;
+}
+.first-ul>li{
+    list-style: none;
+}
+.first-ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
+}
+.first-ul li a:hover{
+ color: #ff783f;
+
+}
+.section-3{
+    background:linear-gradient(rgba(5, 1, 51, 0.7),rgba(5, 1, 51, 0.7),rgba(0,0,0,0)),url("/images/banner-1.jpg");
+    /* background:rgba(0,0,0,6) url("/images/banner-1.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  
+    background-color: black;
+    position: relative;
+}
+/* .section-3::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(103, 98, 150, 0.7);
+
+   
+} */
+.caption-text-1{
+    font-size: 20px;
+    inline-size: 30px;
+    color: orange;
+}
+.caption-text{
+    color: white;
+}
+.btn-courses{
+    background-color: #ff630e;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    height: 52px;
+    width: 167px;
+
+}
+.btn-courses:hover{
+    background-color: white;
+    color: #ff630e;
+}
+.btn-triel{
+    background-color: white;
+    color: #ff630e;
+    font-size: 15px;
+    text-align: center;
+    height: 52px;
+    width: 167px;
+
+}
+.btn-triel:hover{
+    background-color: #ff630e;
+    color: white;      
+
+}
+.section-4-text-1{
+    font-size: 15px;
+
+    line-height: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FF630E;
+    letter-spacing: 1px;
+}
+.section-4-text-2{
+    font-size: 33px;
+    font-weight: 500;
+
+    color: #130f40;
+}.card-text{
+    font-size: 17px;
+    font-weight: 400;
+}
+.card-images{
+    /* height: 100px;
+    width: 150px; */
+    border-radius: 15px;
+}
+.btn-all-categories:hover{
+    background-color:  #130f40;
+    color: white;
+    height: 52px;
+    width: 167px;
+    font-size: 15px;
+}
+.btn-all-categories{
+    background-color: #ff630e;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 3px;
+    height: 52px;
+    width: 167px;
+}
+.card-text-2{
+    font-weight: 500;
+    font-size: 25px;
+    text-align: left;
+}
+
+.card-text-2:hover{
+   
+    color: #FF630E;
+}
+.card-text-2-num{
+    color: #FF630E;    font-size: 20px;
+}
+.section-5{
+    background-color: #f7f7f7;
+}
+/* section-6 needed css  */
+.section-6::before{
+    content: '';
+    background-color: #130f40;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    margin-top: 120px;
+}
+.img-text-container{
+    position: relative;
+}
+.girl-1{
+    height: 600px;
+    width: 530px;
+    padding: 10px;
+    border-radius: 12px 0px 12px 12px;
+    background: white;
+}
+.text-container-offer{
+    float: left;
+}
+.img-text-container-2{
+    color: white;
+    height: 600px;
+    width: 530px;
+    padding: 75px 50px;
+    background: #130f40;
+    border-radius: 0px 12px 12px 12px;
+}
+.img-text-container-2 h4{
+    color: #FF630E;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 26px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.img-text-container-2 h2{
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    color: #fff;
+}
+.img-text-container-2 p{
+    
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    line-height: 26px;}
+    .quolans{
+        color: #FF630E;
+    }
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    .clients{
+        height: 70px;
+        width: 70px;
+        border-radius: 40px
+    }
