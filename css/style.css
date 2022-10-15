@@ -214,3 +214,38 @@
         width: 70px;
         border-radius: 40px
     }
+    .email-subcription-bar{
+        height: 160px;
+        width: 1250px;
+        background-color: #130f40;
+        border-radius: 40px;
+    }
+    .input-email-1{
+        height: 52px;
+        border: 0px;
+
+
+    }
+
+    .form-button input{
+        height: 50px;
+        padding: 12px 12px;
+        border: 0%;
+        border: 0px;
+        font-size: 12px;
+        position: relative;
+        width: 450px;
+        box-sizing: border-box;
+        border-radius: 10px 0px 0px 10px;
+    }
+    .form-button button{
+        border: 0px;
+    margin: 0px;
+    height: 50px;
+    background-color: #FF630E;
+    font-size: 14px;
+    padding: 12px;
+    font-weight: 500;
+    color: white;
+
+    }
