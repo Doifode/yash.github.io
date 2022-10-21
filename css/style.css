@@ -39,7 +39,7 @@
     color: #ff783f;
 }
 .section-intro-img {
-    background: linear-gradient(rgba(5, 1, 51, 0.7), rgba(5, 1, 51, 0.7), rgba(0, 0, 0, 0)), url("/yashwebsite/images/banner-1.jpg");
+    background: linear-gradient(rgba(5, 1, 51, 0.7), rgba(5, 1, 51, 0.7), rgba(0, 0, 0, 0)), url("images/banner-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
