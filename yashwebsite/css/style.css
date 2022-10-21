@@ -1,0 +1,254 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.navigation-bar-1 {
+    height: 70px;
+    background-color: #0e0a38;
+}
+.search-input {
+    height: 37px;
+    width: 175px;
+    background: #27234c;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+.font-size-nav {
+    font-size: 16px;
+    color: white;
+}
+.navigation-bar-2 {
+    height: 85px;
+}
+.logo-img {
+    max-width: 170px;
+    height: 50px;
+}
+.first-ul>li {
+    list-style: none;
+}
+.first-ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
+}
+.first-ul li a:hover {
+    color: #ff783f;
+}
+.section-intro-img {
+    background: linear-gradient(rgba(5, 1, 51, 0.7), rgba(5, 1, 51, 0.7), rgba(0, 0, 0, 0)), url("/yashwebsite/images/banner-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+    position: relative;
+}
+.caption-text-1 {
+    font-size: 20px;
+    inline-size: 30px;
+    color: orange;
+}
+.caption-text {
+    color: white;
+}
+.btn-courses {
+    background-color: #ff630e;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    height: 52px;
+    width: 167px;
+}
+.btn-courses:hover {
+    background-color: white;
+    color: #ff630e;
+}
+.btn-triel {
+    background-color: white;
+    color: #ff630e;
+    font-size: 15px;
+    text-align: center;
+    height: 52px;
+    width: 167px;
+}
+.btn-triel:hover {
+    background-color: #ff630e;
+    color: white;
+}
+.popular-categories-text-1 {
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FF630E;
+   letter-spacing: 1px;
+}
+.popular-categories-text-2 {
+    font-size: 33px;
+    font-weight: 500;
+    color: #130f40;
+}
+.card-text {
+    font-size: 17px;
+   font-weight: 400;
+}
+.card-images {
+    border-radius: 15px;
+}
+.btn-all-categories:hover {
+    background-color: #130f40;
+    color: white;
+    height: 52px;
+    width: 167px;
+    font-size: 15px;
+}
+.btn-all-categories {
+    background-color: #ff630e;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 3px;
+    height: 52px;
+    width: 167px;
+}
+.card-text-2 {
+    font-weight: 500;
+    font-size: 25px;
+    text-align: left;
+}
+.card-text-2:hover {
+   color: #FF630E;
+}
+.card-text-2-num {
+    color: #FF630E;
+    font-size: 20px;
+}
+.section-5 {
+    background-color: #f7f7f7;
+}
+.discount-section::before {
+    content: '';
+    background-color: #130f40;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    margin-top: 120px;
+}
+.img-text-container {
+    position: relative;
+}
+.girl-1 {
+    height: 600px;
+    width: 530px;
+    padding: 10px;
+    border-radius: 12px 0px 12px 12px;
+    background: white;
+}
+.text-container-offer {
+    float: left;
+}
+.img-text-container-2 {
+    color: white;
+    height: 600px;
+    width: 530px;
+    padding: 75px 50px;
+    background: #130f40;
+    border-radius: 0px 12px 12px 12px;
+}
+.img-text-container-2 h4 {
+    color: #FF630E;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 26px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.text-para-1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 35px;
+    line-height: 35px;
+}
+.text-para-2{
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+  
+}
+
+.quolans {
+    color: #FF630E;
+}
+.clients {
+    height: 70px;
+    width: 70px;
+    border-radius: 40px
+}
+
+
+.form-button input {
+    height: 50px;
+    padding: 12px 12px;
+    border: 0%;
+    border: 0px;
+    font-size: 12px;
+    position: relative;
+    width: 450px;
+    box-sizing: border-box;
+    border-radius: 10px 0px 0px 10px;
+}
+.form-button button {
+    border: 0px;
+    margin: 0px;
+    height: 50px;
+    background-color: #FF630E;
+    font-size: 14px;
+    padding: 12px;
+    font-weight: 500;
+    color: white;
+}
+
+.svg-image-logo {
+    height: 50px;
+    width: 50px;
+}
+.footer {
+    background-color: #130f40;
+    color: white;
+}
+.footer-imgs {
+    height: 90px;
+    width: 90px;
+    margin-right: 20px;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    border-radius: 15px;
+}
+.menu-buttons::after {
+    content: " ";
+    position: absolute;
+    margin: 20px;
+    padding: 10px;
+    font-size: 50px;
+    display: none;
+    color: white;
+    z-index: 5;
+}
+.menu-buttons{
+    position: absolute;
+    color: white;
+    background-color: #0e0a38;
+    font-size: 50PX;
+}
+.menu-chart::after{
+    width: -50%;
+    height: 100%;
+    color: white;
+    background-color: #0e0a38;
+  background-color:#0e0a38;
+
+}
