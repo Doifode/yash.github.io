@@ -1,0 +1,30 @@
+@media (min-width: 100px) and (max-width: 560px){
+    .subscribe-section{
+        height: 355px;
+        padding: 0px 0px;
+    }
+    .products-for-quots{
+        height: 355px;
+        padding:0px 0px;
+    }
+    .last-form input{
+        width: 15rem;
+        margin: 10px 0px;
+        
+    }
+    .contact-num-text{
+        font-size: 14px;
+    }
+    .navigation-tabs{
+        display: none;
+    }
+    .toggle-menu{
+    display:none;
+    }
+    .toggle-menubar{
+        display: block;
+        float: right;
+    }
+
+
+}
