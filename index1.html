@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- all links that necessary ? -->
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- bootstrape link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- font awesome linke  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- search bar hidden search bar  -->
+    <div class="container hidden-search-bar " id="hidden-search-bar">
+        <form action="">
+            <input type="text">
+            <button>Search</button>
+        </form>
+    </div>
+    <!-- navigation bar start -->
+    <div class="container-fluid navigation-bar   ">
+        <div class="row toggle-menu">
+            <div class="col-6 toggle-menu">
+                <div class="logo-img-wrap navigation-bar d-flex align-items-center justify-content-center toggle-menu">
+                    <img src="/images/logo.png" alt="">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="buttons-wrape navigation-bar  d-flex  align-items-center justify-content-around toggle-menu">
+                    <p class="me-3 contact-num text-white toggle-menu">CALL: 1-800-123-4567</p>
+                    <div class="dropdown ">
+                        <button class=" button-quote me-2 text-light toggle-menu" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" class="">
+                            GET QUOTE
+                        </button>
+                        <button class="login-button text-light toggle-menu"> login</button>
+                        <button class="search-button text-light toggle-menu" onclick="slide()"> <i
+                                class="fa-solid fa-magnifying-glass toggle-menu" class=" "></i></button>
+                                <div class="toggle-menubar "><i class="fa-solid fa-bars " onclick="menu()" id="toggle-bars"></i></div>
+                        <!-- list of dropdown list  -->
+                        <ul class="dropdown-menu dropdown-menu-list  justify-content-center align-items-center">
+                            <li> <a href="" class="text-black"> Auto insurence </a></li>
+                            <li> <a href="" class="text-secondary"> Life insurence</a></li>
+                            <li> <a href="" class="text-secondary"> Buisness insurence</a></li>
+                            <li> <a href="" class="text-secondary"> Travel insurence</a></li>
+                            <li> <a href="" class="text-secondary"> Home insurence</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="navigation-tabs">
+                    <button>HOME</button>
+                    <button>INSURENCE</button>
+                    <button>FIND AN AGENT</button>
+                    <button>CLAIM CENTER</button>
+                    <button>PAGES</button>
+                    <button>SHORT CODES</button>
+                    <button>CONTACT US</button>
+                    <button>SHARE +</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- image slider start/ -->
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-12">
+                <div class="img-slider-wrape">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="/images/slider-1.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <!-- msg-box-imgsage on slider  -->
+                                    <div class="msg-box-img">
+                                        <h3 class="msg-box-header">Get insurence in a minuts and savae your 15% off</h3>
+                                        <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <button class="card-btn">Get Insurence Today</button>
+                                    </div>
+                                    <p class="text-black">Some representative placeholder content for the first slide.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="/images/slider-2.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <!-- msg-box-imgsage on slider  -->
+                                    <div class="msg-box-img">
+                                        <h3 class="msg-box-header">Protect your family & secure the</h3>
+                                        <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing.</p>zz
+                                        <button class="card-btn">Get a Quote</button>
+                                    </div>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/slider-3.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <!-- msg-box-imgsage on slider  -->
+                                    <div class="msg-box-img">
+                                        <h3 class="msg-box-header">Protect your family & secure the</h3>
+                                        <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <button class="card-btn">Get Insurence Today</button>
+                                    </div>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque accu. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- advertisement-text container start  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="advertisement-text pt-5 pb-5 mt-5 mb-5">
+                    <p>Peace Insurance has over 25 years of experience in the insurance industry.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- insurence product container  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-6 p-0">
+                <div class="product-wrap border w-100 p-0">
+                    <div class="logo"><i class="fa-solid fa-umbrella"></i></div>
+                    <div class="caption pt-3 pb-3">
+                        <h3 class="text-center">Insurance Products
+                        </h3>
+                    </div>
+                    <div class="text-para text-secondary pt-2 pb-3">
+                        <p>Peace Insurance offers a range of protection plans for you and your family.</p>
+                    </div>
+                    <div class="product-button"> <button class="button-quote">view our products</button> </div>
+                </div>
+            </div>
+            <div class="col-6 p-0">
+                <div class="product-wrap border w-100 p-0">
+                    <div class="logo"><i class="fa-solid fa-umbrella"></i></div>
+                    <div class="caption pt-3 pb-3">
+                        <h3 class="text-center">Insurance Products
+                        </h3>
+                    </div>
+                    <div class="text-para text-secondary pt-2 pb-3">
+                        <p>Peace Insurance offers a range of protection plans for you and your family.</p>
+                    </div>
+                    <div class="product-button"> <button class="button-quote">view our products</button> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- advertisement-text container start  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="advertisement-text pt-5 pb-5 mt-5 mb-5 jus">
+                    <p>Insurance Coverage That Fits Your Life.</p>
+                    <div class="text-center text-secondary">insurance coverage around your needs is easier than you
+                        think. Sometimes on purpose injected humour and the like simple dummy.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sliding dives with information  -->
+    <div class="container ">
+        <div class="row">
+            <div class="col-12">
+                <div class="sliding-div-wraper">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="sliding-div-group">
+                                    <div class="slide-div-text-box d-flex justify-content-around">
+                                        <div class="div-1">
+                                            <h3>AUTO</h3>
+                                            <h3 class="pt-2 pb-2">INSURENCE</h3>
+                                            <P class="text-secondary text-justify pt-2 pb-3">
+                                                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Odit.
+                                            </P>
+                                            <div class="card-icon">
+                                                <span> <i class="fa-solid fa-car"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="div-1">
+                                            <h3>HOME</h3>
+                                            <h3 class="pt-2 pb-2">INSURENCE</h3>
+                                            <P class="text-secondary text-justify pt-2 pb-3">
+                                                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Odit.
+                                            </P>
+                                            <div class="card-icon">
+                                                <span> <i class="fa-solid fa-house"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="div-1">
+                                            <h3>BUSINESS</h3>
+                                            <h3 class="pt-2 pb-2">INSURENCE</h3>
+                                            <P class="text-secondary text-justify pt-2 pb-3">
+                                                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Odit.
+                                            </P>
+                                            <div class="card-icon">
+                                                <span><i class="fa-solid fa-briefcase"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="sliding-div-group">
+                                    <div class="slide-div-text-box d-flex justify-content-around">
+                                        <div class="div-1">
+                                            <h3>TRAVEL</h3>
+                                            <h3 class="pt-2 pb-2">INSURENCE</h3>
+                                            <P class="text-secondary text-justify pt-2 pb-3">
+                                                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Odit.
+                                            </P>
+                                            <div class="card-icon">
+                                                <span><i class="fa-sharp fa-solid fa-plane"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="div-1">
+                                            <h3>HEALTH-LIFE</h3>
+                                            <h3 class="pt-2 pb-2">INSURENCE</h3>
+                                            <P class="text-secondary text-justify pt-2 pb-3">
+                                                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Odit.
+                                            </P>
+                                            <div class="card-icon">
+                                                <span><i class="fa-solid fa-heart"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="div-1">
+                                            <h3>OTHER</h3>
+                                            <h3 class="pt-2 pb-2">INSURENCE</h3>
+                                            <P class="text-secondary text-justify pt-2 pb-3">
+                                                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Odit.
+                                            </P>
+                                            <div class="card-icon">
+                                                <span><i class="fa-solid fa-lightbulb"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- latest news from media headint and info section  -->
+    <div class="container-fluid background-dimwhite mt-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="advertisement-text pt-5 pb-5 mt-5 mb-5 jus">
+                    <p>Latest News From Media.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card section for media news  -->
+    <div class="container-fluid pb-5 pt-5 background-dimwhite">
+        <div class="row">
+            <div class="col-12 col-md-12 col-xxl-4 col-xl-4 col-sm-12 ">
+                <div class="news-card-section d-flex justify-content-around align-items-center ">
+                    <div class="card rounded-0" style="width: 23rem;">
+                        <img src="/images/blog-pic-1.jpg" class="card-img-top img-news-sec" alt="">
+                        <div class="card-body">
+                            <h3 class="caption-news  ">POST HEADING TITLE</h3>
+                            <p class="card-text card-para text-secondary">Etiam nec nuttincidunt elit estibulum in
+                                accumsan magnaauris tincidunt turpis ugiatelit roin id viverra velit.
+                                <hr>
+                            </p>
+                            <h6 class="caption-news"> POSTED ON MAY <span class=" fs-6">5,2015 </span> </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-xxl-4 col-xl-4 col-sm-12 ">
+                <div class="news-card-section d-flex justify-content-around align-items-center ">
+                    <div class="card rounded-0" style="width: 23rem;">
+                        <img src="/images/blog-pic-2.jpg" class="card-img-top img-news-sec" alt="">
+                        <div class="card-body">
+                            <h3 class="caption-news  ">POST HEADING TITLE</h3>
+                            <p class="card-text card-para text-secondary">Etiam nec nuttincidunt elit estibulum in
+                                accumsan magnaauris tincidunt turpis ugiatelit roin id viverra velit.
+                                <hr>
+                            </p>
+                            <h6 class="caption-news"> POSTED ON MAY <span class=" fs-6">5,2015 </span> </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-xxl-4 col-xl-4 col-sm-12 ">
+                <div class="news-card-section d-flex justify-content-around align-items-center ">
+                    <div class="card rounded-0" style="width: 23rem;">
+                        <img src="/images/blog-pic.jpg" class="card-img-top img-news-sec" alt="">
+                        <div class="card-body">
+                            <h3 class="caption-news  ">POST HEADING TITLE</h3>
+                            <p class="card-text card-para text-secondary">Etiam nec nuttincidunt elit estibulum in
+                                accumsan magnaauris tincidunt turpis ugiatelit roin id viverra velit.
+                                <hr>
+                            </p>
+                            <h6 class="caption-news"> POSTED ON MAY <span class=" fs-6">5,2015 </span> </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5 ">
+        <div class="row">
+            <div class="col-xl-6 col-xxl-6 col-md-12 col-12 col-sm-12">
+                <div class="subscribe-section ">
+                    <h1>Subscribe to Our </h1>
+                    <h1>Newsletter</h1>
+                    <p class="pt-3 pb-3 text-secondary">Lorem ipsum dolor sit amet consectetur adipisci lorem ipsum.</p>
+                    <form action="" class="last-form">
+                        <input type="text"><br>
+                        <button>Subcribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class=" col-xl-6 col-xxl-6 col-md-12 col-12 col-sm-12">
+                <div class="products-for-quots">
+                    <h1>Select A Products For </h1>
+                    <h1>Quote </h1>
+
+                    <div class="row mt-5">
+                        <div class="col-6 ">
+                            <div class="color-text-quots">
+                                <p><i class="fa me-3 fa-car"></i>Auto insurence</p>
+                                <p><i class="fa me-3 fa-heart"></i>Life insurence</p>
+                                <p><i class="fa me-3 fa-envelope"></i>Buisness insurence</p>
+                                <form action="" class="last-form">
+
+                                    <button>Get a Quote </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="color-text-quots">
+                                <p><i class="fa me-3 fa-plane"></i>Travel insurence</p>
+                                <p><i class="fa me-3 fa-home"></i>Home insurence</p>
+                                <p><i class="fa me-3 fa-envelope"></i>Other insurence</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- footer section start from here  -->
+        <div class="container-fluid ">
+            <div class="footer-sec pb-0 pt-5 mt-5 mb-0 ps-5 pe-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-bar d-flex align-items-center justify-content-between pb-5 pt-5">
+                        <div class="last-logo">
+                            <img src="/images/ft-logo.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="contact-div">
+                            <h1 class="text-white contact-num-text"> +1 800-PEACE | (1-800-123-4567)</h1>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="row pb-5 ">
+                <div class="col-12 col-xl-2 col-xxl-2 col-md-12 col-12 col-sm-12">
+                    <div class="footer-lit-1">
+                        <h2 class=" text-white">Insurence</h2>
+                        <ul>
+                            <li class="text-secondary">>> Auto INsurence</li>
+                            <li class="text-secondary">>> Life INsurence</li>
+                            <li class="text-secondary">>> Travel INsurence</li>
+                            <li class="text-secondary">>> Home INsurence</li>
+                            <li class="text-secondary">>> Business INsurence</li>
+                            <li class="text-secondary">>> Other INsurence</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-2 col-xxl-2 col-md-12 col-12 col-sm-12">
+                    <div class="footer-lit-1">
+                        <h2 class="text-white">Quick Links</h2>
+                        <ul>
+                            <li class="text-secondary">>> About us</li>
+                            <li class="text-secondary">>> Support </li>
+                            <li class="text-secondary">>> Download app</li>
+                            <li class="text-secondary">>> Investor</li>
+                            <li class="text-secondary">>> Find an agent</li>
+                            <li class="text-secondary">>> Claims</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-5 col-xxl-5 col-md-12 col-12 col-sm-12">
+                    <div class="footer-peace-insurence">
+                        <h2 class="text-white">About Peace Insurence</h2>
+                        <p class="text-secondary">Established in 1990, we are your insurance expert committed to <br> providing peace of mind
+                            to all kinds of borrowers by helping <br> them obtain and manage a insurance.</p> <br>
+                        <span class="text-white">Address :</span>
+                        <p class="text-secondary">56702,Meeraz Centroz, Near roxa,garden, Banglore </p> <br>
+                        <span class=" text-white"> Phone :</span>
+                        <p class="text-secondary">+1 800-PEACE | (1-800-123-4567)</p>
+                        <form action="" class="last-form">
+                            <button>Get a Quote </button>
+                        </form>
+                    </div>
+                </div>
+                <div class=" col-xl-3 col-xxl-3 col-md-12 col-12 col-sm-12">
+                    <div class="footer-buttons">
+                        <h2 class="text-white">Social</h2>
+                        <ul>
+                            <li><button class="border-0 text-white  footer-button-1 m-1"><i
+                                        class="fa-brands me-2 fa-facebook-f"></i> facebook</button></li>
+                            <li><button class="border-0 text-white  footer-button-2 m-1"><i
+                                        class="fa-brands me-2 fa-square-twitter"></i> tweeter</button></li>
+                            <li><button class="border-0 text-white  footer-button-4 m-1"><i
+                                        class="fa-brands me-2 fa-square-google-plus"></i> Google</button></li>
+                            <li><button class="border-0 text-white  footer-button-4 m-1"><i
+                                        class="fa-brands me-2 fa-linkedin "></i> LilnkedIN</button></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <script>
+
+            function slide() {
+                let btn = document.getElementsByClassName('search-button');
+                console.log(btn);
+                let search = document.getElementById('hidden-search-bar');
+                console.log(search);
+
+                if (search.style.display != 'block') {
+                    search.style.display = 'block';
+                }
+                else {
+                    search.style.display = 'none';
+                }
+            }
+
+            function menu() {
+                let yash = document.getElementById('toggle-bars');
+                console.log(yash);
+                let om = document.getElementsByClassName('toggle-menu');
+                console.log(om);
+                if(om.style.display != 'block'){
+                    om.style.display ='block';
+
+                }
+                else{
+                    om.style.display ='none';
+                }
+            }
+     
+            
+        </script>
+</body>
+
+</html>
