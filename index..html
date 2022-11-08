@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrape link class -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="form-body-wrape">
+        <div class="container">
+            <div class="row">
+                <div class="heading-wrape rounded border ps-2 pe-2 pt-3 pb-3 mt-3 mb-3 bg-secondary text-white text-center">
+                    <h1>Assignment on element reading and printing.</h1>
+                    <p>
+                        Topic used : if else, switch case, document.getElementByid,
+                        variable declaration
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 col-xl-4 col-sm-12 col-xxl-4">
+                    <input type="text" placeholder="Enter Name" id="Fname"
+                        class="rounded border w-100 m-1 text-center p-1 text-secondary" />
+                </div>
+                <div class="col-12 col-md-4 col-xl-4 col-sm-12 col-xxl-4">
+                    <button class="btn btn-warning border-0" onclick="printvalue()">Print Value</button>
+                    <br />
+                    <p>(print value from the text box in paragraph)</p>
+                </div>
+                <div class="col-12 col-md-4 col-xl-4 col-sm-12 col-xxl-4">
+                    <th>Text Box Value =</th>
+                    <span id="FnamePrint"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 col-xl-4 col-sm-12 col-xxl-4">
+                    <select name="" id="SelectCity" class="rounded border rounded w-100 m-1 text-center p-1 text-secondary " onchange="printCityName()">
+                        <option value="">--Select--</option>
+                        <option value="kolhapur">kolhapur</option>
+                        <option value="solapur">solapur</option>
+                        <option value="pune">pune</option>
+                        <option value="pandharpur">pandharpur</option>
+                        <option value="mumbai">mumbai</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-4 col-xl-4 col-sm-12 col-xxl-4">
+                    <button class="btn btn-warning border-0"  onclick="printcityname()">Print City</button>
+                    <br />
+                    <p>(print value from the text box in paragraph)</p>
+                </div>
+                <div class="col-12 col-md-4 col-xl-4 col-sm-12 col-xxl-4">
+                    <th>Dropdown selected value =</th>
+                    <span id="SelectedCity"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 col-xl-4 col-sm-12 col-xxl-4">
+                    <input type="radio"  id="maleValue" value="Male" name="u"/>
+                    <label for="Male"> Male</label>
+                    <input type="radio" id="femaleValue" value="Female"   name="u" />
+                    <label for="">Female</label>
+                </div>
+                <div class="col-12 col-md-4 col-xl-4 col-sm-12 col-xxl-4">
+                    <button class="btn btn-warning border-0" onclick="checkgender()" >Print Gender</button>
+                    <br />
+                    <p>(print selected gender value from the radio button in paragraph)</p>
+                </div>
+                <div class="col-12 col-md-4 col-xl-4 col-sm-12 col-xxl-4">
+                    <th>Selected gender =</th>
+                    <span id="GenderName"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 col-xl-4 col-sm-12 col-xxl-4">
+                    <input type="checkbox" value="Yes" class=""  id="IsIndianCheck" />
+                    <label for="">Is Indian</label>
+                </div>
+                <div class="col-12 col-md-4 col-xl-4 col-sm-12 col-xxl-4">
+                    <button class="btn btn-warning border-0" onclick="IndianCheck()">Print Value</button>
+                    <br />
+                    <p>(If checkbox is selected then print yes otherwise no)</p>
+                </div>
+                <div class="col-12 col-md-4 col-xl-4 col-sm-12 col-xxl-4">
+                    <th>Is Indian =</th>
+                    <span id="Indian"></span>
+                </div>
+            </div>
+<div class="row">
+    <div class="col-12 col-md-4 col-xl-4 col-sm-12 col-xxl-4">
+        <input type="text" placeholder="First Name" id="FirstName"
+            class="rounded border  m-1 text-center p-1 text-secondary" />
+            <input type="text" placeholder="Middle Name" id="MiddleName"
+                class="rounded border  m-1 text-center p-1 text-secondary" />
+        </div>
+        <div class="col-12 col-md-4 col-xl-4 col-sm-12 col-xxl-4">
+            <div class="row">
+                <div class="col-6 col-xl-6 col-xxl-6 col-sm-12 col-md-12"><input type="text" placeholder="Last Name" id="LastName"
+                    class="rounded border  m-1 text-center p-1 text-secondary" /></div>
+                    <div class="col-6 col-xl-6 col-xxl-6 col-sm-12 col-md-12"><button class="btn btn-warning border-0" onclick="GenerateFullname()">Generate Full Name</button> <br>
+                        <p>(generate full name seprated by space and show it in the textbox)</p></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-xl-4 col-sm-12 col-xxl-4">
+                    <input type="text" placeholder="Full Name" id="FullName"
+                    class="rounded border  m-1 text-center p-1 text-secondary w-100" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 col-xl-4 col-sm-12 col-xxl-4">
+                    <select name="" id="SelectItems" class=" rounded  m-1 p-1 text-secondary w-100">
+                        <option value="oil1">oil1</option>
+                        <option value="oil2">oil2</option>
+                        <option value="oil3">oil3</option>
+                        <option value="pattagobi">pattagobi</option>
+                        <option value="carrot">carrot</option>
+                        <option value="tomato">tomato</option>
+                        <option value="apple">apple</option>
+                        <option value="mango">mango</option>
+                        <option value="watermellone">watermellone</option>
+                    </select>
+                    <p>(On select of food item show category in paragraph on button click )</p>
+                    <ul>
+                        <li>oil </li>
+                        <li>vegetable</li>
+                        <li>Fruits</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 col-xl-4 col-sm-12 col-xxl-4">
+                    <button class="btn btn-warning border-0" onclick="printcategory()">Print Category</button>
+                </div>
+                <div class="col-12 col-md-4 col-xl-4 col-sm-12 col-xxl-4">
+                    <label for="">Selected Category=</label> <span id="printCategory"></span>
+                </div>
+            </div>
+            <script>
+                function printvalue(){
+                    var NameValue =document.getElementById('Fname').value;
+                    document.getElementById('FnamePrint').innerHTML=NameValue;
+                }
+                function printCityName(){
+                    var CityValue =document.getElementById('SelectCity').value;
+                    document.getElementById('SelectedCity').innerHTML = CityValue;
+                }
+    
+                // male female check js 
+                function checkgender(){
+                    var maleRadio=document.getElementById('maleValue');
+                    var femaleRadio=document.getElementById('femaleValue');
+                    if(maleRadio.checked==true){
+                        document.getElementById('GenderName').innerHTML=maleRadio.value; 
+                    }
+                    else if(femaleRadio.checked==true){
+                        document.getElementById('GenderName').innerHTML=femaleRadio.value; 
+                    }
+                    else{
+                        alert('please select gender')
+                    }
+                }
+                // indian is or not check box js
+                function IndianCheck(){
+                    var checkbox=document.getElementById('IsIndianCheck');
+                    if(checkbox.checked==true){
+                        document.getElementById('Indian').innerHTML=checkbox.value;
+                    }
+                    else if(checkbox.checked==false){
+                        document.getElementById('Indian').innerHTML="NO";
+                    }
+                }
+                // generating full name 
+function GenerateFullname(){
+    var fnamefull=document.getElementById('FirstName').value;
+    var mnamefull=document.getElementById('MiddleName').value;
+    var lnamefull=document.getElementById('LastName').value;
+    document.getElementById('FullName').value=fnamefull+" "+mnamefull+" "+lnamefull;
+
+}
+
+function printcategory(){
+    var getCategory =document.getElementById('SelectItems').value;
+    switch (getCategory){
+
+        case 'oil1':{ document.getElementById('printCategory').innerHTML='oil';
+
+    break;
+    }
+        case 'oil2':{ document.getElementById('printCategory').innerHTML='oil';
+
+    break;
+    }
+        case 'oil3':{ document.getElementById('printCategory').innerHTML='oil';
+
+    break;
+    }
+        case 'pattagobi':{ document.getElementById('printCategory').innerHTML='Vegetable';break;
+        
+        
+    }
+    case 'carrot':{ document.getElementById('printCategory').innerHTML='Vegetable';break;
+    
+    
+}
+case 'tomato':{ document.getElementById('printCategory').innerHTML='Vegetable';break;
+
+
+}
+case 'apple':{ document.getElementById('printCategory').innerHTML='fruits'
+
+}
+break;
+case 'mango':{ document.getElementById('printCategory').innerHTML='fruits'
+
+}
+break;
+case 'watermellone':{ document.getElementById('printCategory').innerHTML='fruits'
+
+}
+break;
+    }
+}
+
+            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
